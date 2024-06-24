@@ -1,0 +1,21 @@
+{
+  "name": "Gligle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/Gligle/"
+  },
+  "author": "Mary",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.2.10",
+    "vite-plugin-full-reload": "^1.1.0",
+    "vite-plugin-html-inject": "^1.1.2"
+  },
+  "dependencies": {
+    "swiper": "^11.1.4"
+  }
+}

@@ -1,0 +1,123 @@
+@import url("./blocks/loader/loader.css");
+@import url("./blocks/modal/modal.css");
+@import url("./reset.css");
+@import url("./blocks/header/header.css");
+@import url("./blocks/hero/hero.css");
+@import url("./blocks/about-project/about-project.css");
+@import url("./blocks/familiarization/familiarization.css");
+@import url("./blocks/advantages/advantages.css");
+@import url("./blocks/reviews/reviews.css");
+@import url("./blocks/contacts/contacts.css");
+@import url("./blocks/footer/footer.css");
+
+body {
+  background-image: url("./img/iPhone14-bakground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Inter;
+}
+body[lock] {
+  overflow: hidden;
+}
+.container {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.symbol-special {
+  color: #eb2828;
+}
+.title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+.subtitle {
+  background: linear-gradient(
+    106deg,
+    rgba(254, 163, 57, 0.6) 3.35%,
+    rgba(235, 40, 40, 0.6) 39.75%,
+    rgba(245, 50, 97, 0.6) 76.16%,
+    rgba(245, 45, 237, 0.6) 112.57%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+.text {
+  color: #aaa;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
+.reviews__container {
+  margin-bottom: 74px;
+}
+
+@media (max-width: 429px) {
+  body {
+    background-size: unset;
+  }
+  .container {
+    max-width: none;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 1194px) {
+  body {
+    background-image: url("./img/iPad11-bakground.jpg");
+  }
+  .container {
+    max-width: 1000px;
+  }
+  .header__container {
+    max-width: 1114px;
+  }
+  .footer__container {
+    max-width: 1034px;
+  }
+  .reviews__container {
+    margin-bottom: 100px;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    background-image: url("./img/Desktop-bakground.jpg");
+  }
+  .container {
+    max-width: 1440px;
+  }
+  .header__container {
+    max-width: 1360px;
+  }
+  .footer__container {
+    max-width: 1440px;
+  }
+  .hero__container {
+    max-width: 1240px;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,14 @@
+<svg width="102" height="31" viewBox="0 0 102 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="EFX LOGO">
+<mask id="mask0_183_808" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="102" height="31">
+<g id="Group 1">
+<path id="Vector" d="M0.0140991 0.75V6.6953V12.6406V18.5859V24.5312V30.4765H5.9594H29.7406V24.5312H5.9594V18.5859H23.7953V12.6406H5.9594V6.6953H29.7406V0.75H5.9594H0.0140991Z" fill="white"/>
+<path id="Vector_2" d="M35.686 0.75V6.6953V12.6406V18.5859V30.4765H41.6313V18.5859H59.4672V12.6406H41.6313V6.6953H65.4125V0.75H41.6313H35.686Z" fill="white"/>
+<path id="Vector_3" d="M101.108 4.9352L96.8988 0.72592L86.2924 11.3383L75.4541 0.5L71.2508 4.70333L82.089 15.5416L71.334 26.2907L75.5433 30.5L86.2924 19.7449L96.8156 30.2681L101.019 26.0648L90.4957 15.5416L101.108 4.9352Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_183_808)">
+<rect id="Rectangle 5" x="0.0140991" y="0.833008" width="101" height="29.6667" fill="white"/>
+</g>
+</g>
+</svg>
