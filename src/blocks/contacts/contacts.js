@@ -1,26 +1,11 @@
-const form = document.querySelector(".contacts-form");
+import { addDateInFormFromLS } from "./js/addDateInFormFromLS";
+import { clearContactsForm } from "./js/clearContactsForm";
+import { formElements } from "./js/formElements";
+import { saveData } from "./js/saveData";
 
-const formElements = {
-  appealEl: document.querySelector(".contacts-form__input[name='appeal']"),
-  communicationEl: document.querySelector(
-    ".contacts-form__input[name='communication']"
-  ),
-  messagesEl: document.querySelector(".contacts-form__input[name='messages']"),
-};
-
-const formValue = localStorage.getItem("formValue");
-if (formValue) {
-  const saveFormValue = JSON.parse(formValue);
-  formElements.appealEl.value = saveFormValue.appeal || "";
-  formElements.communicationEl.value = saveFormValue.communication || "";
-  formElements.messagesEl.value = saveFormValue.messages || "";
+if (localStorage.getItem("formValue")) {
+  addDateInFormFromLS();
 }
 
-form.addEventListener("input", saveData);
-
-function saveData(event) {
-  let formValueLs = JSON.parse(localStorage.getItem("formValue")) || {};
-  const { name, value } = event.target;
-  formValueLs[name] = value;
-  localStorage.setItem("formValue", JSON.stringify(formValueLs));
-}
+formElements.form.addEventListener("input", saveData);
+formElements.submitBth.addEventListener("click", clearContactsForm);
