@@ -73,6 +73,9 @@
   .about-project__title {
     margin-bottom: 70px;
   }
+  .about-project__text:nth-child(1){
+    margin-bottom: 0;
+  }
   .about-project__date-flexblock-mini {
     display: flex;
     gap: 40px;

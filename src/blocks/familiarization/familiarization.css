@@ -73,6 +73,9 @@
   .familiarization__title {
     margin-bottom: 70px;
   }
+  .familiarization__text:nth-child(1) {
+    margin-bottom: 0;
+  }
   .familiarization__textblock {
     display: flex;
     padding-right: 23px;
