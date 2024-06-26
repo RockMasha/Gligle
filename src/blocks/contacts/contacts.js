@@ -11,15 +11,15 @@ const formElements = {
 const formValue = localStorage.getItem("formValue");
 if (formValue) {
   const saveFormValue = JSON.parse(formValue);
-  formElements.appealEl.value = saveFormValue.appeal;
-  formElements.communicationEl.value = saveFormValue.communication;
-  formElements.messagesEl.value = saveFormValue.messages;
+  formElements.appealEl.value = saveFormValue.appeal || "";
+  formElements.communicationEl.value = saveFormValue.communication || "";
+  formElements.messagesEl.value = saveFormValue.messages || "";
 }
 
 form.addEventListener("input", saveData);
 
 function saveData(event) {
-  const formValueLs = JSON.parse(localStorage.getItem("formValue"));
+  let formValueLs = JSON.parse(localStorage.getItem("formValue")) || {};
   const { name, value } = event.target;
   formValueLs[name] = value;
   localStorage.setItem("formValue", JSON.stringify(formValueLs));
