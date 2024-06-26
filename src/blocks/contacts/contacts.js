@@ -1,5 +1,5 @@
 const form = document.querySelector(".contacts-form");
-console.log(1);
+
 const formElements = {
   appealEl: document.querySelector(".contacts-form__input[name='appeal']"),
   communicationEl: document.querySelector(
