@@ -4,16 +4,25 @@ import { isInWindow } from "./js/isInWindow";
 document.addEventListener("scroll", activatingNumb);
 
 function activatingNumb() {
-  if (isInWindow()) {
-    const numbElements = document.querySelectorAll(
-      ".reviews-achievement__numb"
-    );
+  if (!isInWindow()) {
+    return;
+  }
 
-    numbElements.forEach((elem) => {
-      const maxNumb = elem.dataset.value;
-      animateValue(elem, maxNumb, 1500);
-    });
+  const numbElements = document.querySelectorAll(".reviews-achievement__numb");
 
-    document.removeEventListener("scroll", activatingNumb);
+  numbElements.forEach((elem) => {
+    const maxNumb = elem.dataset.value;
+    animateValue(elem, maxNumb, 1500);
+  });
+
+  document.addEventListener("scroll", WaitOutWindow);
+  document.removeEventListener("scroll", activatingNumb);
+}
+
+
+function WaitOutWindow() {
+  if(!isInWindow()){
+    document.addEventListener("scroll", activatingNumb );
+    document.removeEventListener("scroll", WaitOutWindow);
   }
 }
