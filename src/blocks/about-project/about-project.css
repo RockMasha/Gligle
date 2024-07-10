@@ -52,13 +52,39 @@
   height: 64px;
   border-radius: 50px;
 }
+
 @media (max-width: 429px) {
   .about-project-quote {
-    padding: 20px 40px 20px 0;
+    padding: 20px 30px 20px 0;
     border-right: 3px solid #ca2b5a;
   }
   .about-project-quote__text {
-    font-size: 24px;
+    font-size: calc(20px + 8 * (100vw / 430));
+  }
+  .about-project-quote-autor {
+    gap: 20px;
+  }
+  .about-project-quote-autor__name {
+    font-size: calc(15px + 5 * (100vw / 430));
+  }
+  .about-project-quote-autor__role{
+    font-size: calc(10px + 4 * (100vw / 430));
+  }
+  .about-project-quote-autor__img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-project-quote__text {
+    font-size: calc(20px + (8 + 8 * 0.7) * ((100vw - 320px) / 430));
+  }
+  .about-project-quote-autor__name {
+    font-size: calc(15px + (5 + 5 * 0.7) * ((100vw - 320px) / 430));
+  }
+  .about-project-quote-autor__role{
+    font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 430));
   }
 }
 
@@ -67,7 +93,7 @@
     padding-bottom: 195px;
   }
   .about-project__date-flexblock {
-    padding-right: 360px;
+    width: 640px;
     margin-bottom: 100px;
   }
   .about-project__title {
@@ -81,7 +107,8 @@
     gap: 40px;
   }
   .about-project-quote {
-    padding-left: 394px;
+    width: 556px;
+    margin-left: auto;
   }
   .about-project-quote__text {
     font-size: 34px;
@@ -98,12 +125,10 @@
   }
   .about-project__date-flexblock {
     width: 640px;
-    padding-right: 0;
     margin-bottom: 0;
   }
   .about-project-quote {
     width: 556px;
     margin-top: 129px;
-    padding-left: 0;
   }
 }

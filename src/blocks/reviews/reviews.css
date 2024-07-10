@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
 }
-.reviews-achievement__result{
+.reviews-achievement__result {
   display: flex;
   gap: 3px;
 }
@@ -27,7 +27,7 @@
   letter-spacing: -0.4px;
   color: #fff;
 }
-.reviews-achievement__plus{
+.reviews-achievement__plus {
   font-size: 38px;
   font-weight: 700;
   letter-spacing: -0.4px;
@@ -94,21 +94,51 @@
   background: #fff;
 }
 
-@media (max-width:429px){
-  .swiper{
-    max-width:calc(100% - 40px);
+@media (max-width: 429px) {
+  .swiper {
+    max-width: calc(100% - 40px);
   }
-  .reviews-achievement__result{
+  .reviews-achievement__result {
     gap: 2px;
   }
   .reviews-achievement__numb {
-    font-size: 27px;
+    font-size: calc(24px + 14 * (100vw / 430));
   }
-  .reviews-achievement__plus{
-    font-size: 27px;
+  .reviews-achievement__plus {
+    font-size: calc(26px + 12 * (100vw / 430));
   }
   .reviews-achievement__text {
-    font-size: 10px;
+    font-size: calc(10px + 4 * (100vw / 430));
+  }
+  .reviews-slider__title {
+    font-size: calc(18px + 6 * (100vw / 430));
+  }
+  .reviews-slider-autor__name {
+    font-size: calc(14px + 4 * (100vw / 430));
+  }
+  .reviews-slider-autor__text {
+    font-size: calc(12px + 4 * (100vw / 430));
+  }
+}
+
+@media (max-width: 360px) {
+  .reviews-achievement__numb {
+    font-size: calc(26px + (12 + 12 * 0.7) * ((100vw - 320px) / 430));
+  }
+  .reviews-achievement__plus {
+    font-size: calc(26px + (12 + 12 * 0.7) * ((100vw - 320px) / 430));
+  }
+  .reviews-achievement__text {
+    font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 430));
+  }
+  .reviews-slider__title {
+    font-size: calc(18px + (6 + 6 * 0.7) * ((100vw - 320px) / 430));
+  }
+  .reviews-slider-autor__name {
+    font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 430));
+  }
+  .reviews-slider-autor__text {
+    font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 430));
   }
 }
 
@@ -125,7 +155,7 @@
   .reviews-achievement__numb {
     font-size: 64px;
   }
-  .reviews-achievement__plus{
+  .reviews-achievement__plus {
     font-size: 64px;
   }
   .reviews-achievement__text {

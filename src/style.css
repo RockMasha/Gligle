@@ -66,6 +66,27 @@ body[lock] {
     padding-left: 25px;
     padding-right: 25px;
   }
+  .subtitle {
+    font-size: calc(16px + 4 * (100vw / 430));
+  }
+  .title {
+    font-size: calc(28px + 10 * (100vw / 430));
+  }
+  .text {
+    font-size: calc(12px + 4 * (100vw / 430));
+  }
+}
+
+@media (max-width: 360px) {
+  .subtitle {
+    font-size: calc(16px + (4 + 4 * 0.7) * ((100vw - 320px) / 430));
+  }
+  .title {
+    font-size: calc(28px + (10 + 10 * 0.7) * ((100vw - 320px) / 430));
+  }
+  .text {
+    font-size: calc(13px + (3 + 3 * 0.7) * ((100vw - 320px) / 430));
+  }
 }
 
 @media (min-width: 1194px) {

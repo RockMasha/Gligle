@@ -1,5 +1,5 @@
 .footer {
-  padding: 50px 25px;
+  padding: 50px 0;
   background: #0c0c0c;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -31,22 +31,18 @@
   display: flex;
   gap: 15px;
 }
-.footer-list-of-link__item {
-  width: 44px;
-  height: 44px;
-}
-.footer-list-of-link__item_telegram {
+.footer-list-of-link__link_telegram {
   background: #08c;
   border: 3px solid #08c;
 }
-.footer-list-of-link__item_gmail {
+.footer-list-of-link__link_gmail {
   background: #bf4500;
   border: 3px solid #bf4500;
 }
 .footer-list-of-link__link {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   justify-content: center;
   align-items: center;
 }
@@ -65,9 +61,6 @@
 }
 
 @media (min-width: 1194px) {
-  .footer {
-    padding: 50px 80px;
-  }
   .footer__container {
     flex-direction: row;
     justify-content: space-between;
@@ -79,12 +72,5 @@
   .footer-signature__img_efx {
     width: 101.094px;
     height: 30px;
-  }
-}
-
-
-@media(min-width: 1920px){
-  .footer{
-    padding: 50px 0;
   }
 }
